@@ -208,7 +208,7 @@ const HeroSection = () => {
                 <Terminal className="text-accentPurple w-10 h-10 relative z-10" />
                 <div className="absolute inset-0 bg-accentPurple/20 blur-xl rounded-full scale-0 group-hover:scale-150 transition-transform duration-500"></div>
               </div>
-              <span className="font-mono text-[10px] text-textMuted uppercase tracking-widest mt-4 text-center px-2">150+ Deploys</span>
+              <span className="font-mono text-[10px] text-textMuted uppercase tracking-widest mt-4 text-center px-2">10+ Deploys</span>
             </motion.div>
           </div>
 
