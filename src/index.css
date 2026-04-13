@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  body {
+    @apply bg-background text-textMain antialiased overflow-x-clip;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Dynamic Background Effects */
+  .orb-purple {
+    @apply fixed rounded-full blur-[80px] -z-10 opacity-20 pointer-events-none;
+    width: 500px;
+    height: 500px;
+    background: #bb86fc;
+    top: -100px;
+    left: -100px;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  .orb-teal {
+    @apply fixed rounded-full blur-[80px] -z-10 opacity-20 pointer-events-none;
+    width: 600px;
+    height: 600px;
+    background: #66fcf1;
+    bottom: -150px;
+    right: -100px;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  /* Glassmorphism Classes */
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-md border border-accent1/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent1 to-accentPurple;
+  }
+}
+
+/* Custom Selection */
+::selection {
+  background: rgba(102, 252, 241, 0.3);
+  color: #fff;
+}
