@@ -199,7 +199,7 @@ const HeroSection = () => {
 
             {/* Side Stats */}
             <motion.div whileHover={{ scale: 1.02, borderColor: "rgba(102,252,241,0.3)" }} className="gsap-img-scale aspect-square bg-card/60 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center border border-white/5 group transition-colors shadow-lg">
-              <span className="text-4xl md:text-5xl font-heading font-black text-textMain group-hover:text-accent1 transition-colors delay-75">08+</span>
+              <span className="text-4xl md:text-5xl font-heading font-black text-textMain group-hover:text-accent1 transition-colors delay-75">05+</span>
               <span className="font-mono text-[10px] text-textMuted uppercase tracking-widest mt-2 text-center px-2">Years Experience</span>
             </motion.div>
 
